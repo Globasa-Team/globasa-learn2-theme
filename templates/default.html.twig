@@ -1,0 +1,33 @@
+{% embed 'partials/base.html.twig' with { github_link_position: false } %}
+
+    {% block content %}
+        {% include 'partials/page.html.twig' %}
+    {% endblock %}
+
+    {% block footer %}
+<footer>
+
+<p class="globasa_links">
+    <a href="https://globasa.net/">🔗 Globasa</a> -
+    <a href="https://xwexi.globasa.net/">🔰 Xwexi</a> -
+    <a href="https://doxo.globasa.net/">📖 Doxo</a> -
+    <a href="https://www.globasa.net/eng/pimpan-swal/contact">🐜 Report a problem or bug</a>
+</p>
+
+  <a xmlns:dct="http://purl.org/dc/terms/" rel="license" class="cc_license badge"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0" class="cc_license"/>
+  </a>
+  
+<p xmlns:dct="http://purl.org/dc/terms/" class="cc_license">
+  To the extent possible under law,
+  <a rel="dct:publisher" href="https://globasa.net/">
+    <span property="dct:title">Globasa Team</span></a>
+  has waived all copyright and related or neighboring rights to the
+  <span property="dct:title">{{ config.site.title }} Website</span>.
+</p>
+
+</footer>
+{% endblock %}
+
+{% endembed %}

@@ -1,0 +1,77 @@
+name: Globasa Learn2 theme
+slug: globasa-learn2-theme
+type: theme
+version: 1
+description: Globasa theme based on Learn2
+icon: language
+author:
+  name: Globasa
+  email: tekno@globasa.net
+homepage: https://github.com/ShawnPConroy/globasa-learn2-theme
+demo: http://xwexi.globasa.net/
+keywords: grav, theme, etc
+bugs: https://github.com/ShawnPConroy/globasa-learn2-theme/issues
+readme: https://github.com/ShawnPConroy/globasa-learn2-theme/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+
+form:
+  validation: loose
+  fields:
+    sidebar_color:
+        type: select
+        size: medium
+        classes: fancy
+        label: Globasa Learn Style
+        options:
+            doxo_site: Doxo Site
+            xwexi_site: Xwexi Site
+            default-site: default
+
+    top_level_version:
+        type: toggle
+        label: Top Level Version
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+
+    home_url:
+        type: text
+        label: Home URL
+        placeholder: http://getgrav.org
+        validate:
+          type: text
+
+    # google_analytics_code:
+    #     type: text
+    #     label: Google Analytics Code
+    #     placeholder: UA-XXXXXXXX-X
+    #     validate:
+    #       type: text
+
+    # github.position:
+    #     type: select
+    #     size: medium
+    #     classes: fancy
+    #     label: GitHub Position
+    #     options:
+    #         top: Top
+    #         bottom: Bottom
+    #         off: Off
+
+    # github.tree:
+    #     type: text
+    #     label: GitHub Tree
+    #     default: https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/
+
+    # github.commits:
+    #     type: text
+    #     label: GitHub Commits
+    #     default: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/

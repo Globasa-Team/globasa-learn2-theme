@@ -1,0 +1,239 @@
+:root {
+    /* Globasa flag colours */
+    --glbBlue: #0040a9;
+    --glbGreen: #008113;
+    --shadowBlue: #000060; /* Recommended shadow */
+    --shadowGreen: #006000;
+
+    /*
+https://coolors.co/0040a9-008113-a9ddd6-91adc2-9ba0bc
+https://coolors.co/0040a9-fffdfd-cbd2d0-f0e100-008113
+https://coolors.co/0040a9-c3f3c0-d00000-ffba08-008113
+    */
+}
+
+#body {
+    max-width: 1024px;
+}
+
+#logo, #logo:link, #logo:hover, #logo:visited {
+    font-size: xx-large;
+    color: white;
+}
+
+
+/** Sidebar **/
+
+#sidebar {
+    color: white;
+}
+
+.xwexi_site #sidebar {
+    background-color: var(--shadowBlue);
+    background: url(https://api.globasa.net/logo/globasa-flag-square-1024.png)
+        no-repeat  25%, linear-gradient(to bottom, rgb(0, 0, 100), rgb(0, 0, 55));
+    background-blend-mode: multiply ;
+}
+
+.doxo_site #sidebar {
+    background-color: var(--shadowGreen);
+    background: url(https://api.globasa.net/logo/globasa-flag-square-1024.png)
+        no-repeat  25%, linear-gradient(to bottom, rgb(0, 55, 0), rgb(0, 25, 0));
+    background-blend-mode:  multiply;
+}
+
+/* Remove colours */
+#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+    background: none;
+}
+
+.active1 > ul, #sidebar ul.topics > li.parent > ul {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+
+#header {
+    padding: 0px;
+    color: white;
+}
+
+/** Sidebar Header **/
+.xwexi_site #header{
+    background-color: var(--glbBlue);
+
+    background: linear-gradient(0deg, rgba(47,103,195,1) 0%, rgba(0,64,169,1) 55%); 
+    
+}
+
+
+.default #header {
+    /* Do nothing for now */
+    background-color: inherit;
+}
+
+footer {
+    border-top: solid 2px var(--glbGreen);
+    border-bottom: solid 2px var(--glbBlue);
+    background: rgb(0,64,169);
+    background: linear-gradient(3deg, rgba(0,64,169,1) 0%, rgba(153,192,255,1) 10%, rgba(133,255,151,1) 90%, rgba(0,129,19,1) 100%);     
+    color: black;
+    font-size: smaller;
+    padding: 1em;
+}
+
+footer a:link, footer a:visited {
+    color: #333;
+    text-decoration: underline;
+}
+
+.cc_license, #body footer img.cc_license {
+    vertical-align: middle;
+}
+
+#body footer img.cc_license {
+    float: left;
+    display: inline-block;
+    margin: .51em;
+}   
+
+.globasa_links {
+    text-align: center;
+}
+
+
+
+/*****************/
+/** doxo style **/
+/*****************/
+
+.doxo_site #body {
+    font-size: 1.3rem;
+    font-family: 'Proza Libre', sans-serif;
+}
+
+.doxo_site #sidebar {
+    color: white;
+    font-family: 'Proza Libre', sans-serif;
+}
+
+.doxo_site #header {
+    background-color: var(--glbGreen);
+    background: linear-gradient(0deg, rgba(44,171,63,1) 0%, rgba(0,129,19,1) 83%); 
+}
+
+.doxo_site #body-inner, .doxo_site h1, .doxo_site h2, .doxo_site h3, .doxo_site h4, .doxo_site h5 {
+    font-family: 'Proza Libre', sans-serif;
+    color: black;
+    letter-spacing: normal;
+}
+
+.doxo_site h1 {
+    font-size: 2rem;
+}
+
+.doxo_site h2 {
+    font-size: 1.8rem;
+    border-bottom: solid 1px black;
+}
+
+.doxo_site h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.doxo_site h4 {
+    font-size: 1.2rem;
+}
+
+.doxo_site h5 {
+    font-size: 1.1rem;
+}
+
+.doxo_site blockquote, .doxo_site blockquote p {
+    color: black;
+}
+
+.doxo_site .imgFocus {
+    max-height: 100%;
+    max-width: 50%;
+}
+
+.doxo_site .legal {
+    font-size: small;
+    color: #888;
+    border-top: solid 1px #888;
+}
+
+
+@media (max-width:840px) {
+    .doxo_site .imgFocus {
+     max-width: 100%;
+     max-height: 100%;
+ }
+}
+@media (max-width:600px) {
+    .doxo_site .imgFocus {
+      max-height: 100%;
+      max-width: 100%;
+  }
+}
+
+
+
+/*****************/
+/** xwexi style **/
+/*****************/
+
+
+.xwexi_site #body {
+    max-width: 1024px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+
+.xwexi_site #sidebar {
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.xwexi_site #body-inner, .xwexi_site h1, .xwexi_site h2, .xwexi_site h3, .xwexi_site h4, .xwexi_site h5 {
+    font-family: 'Libre Franklin', sans-serif;
+    color: black;
+    letter-spacing: normal;
+}
+
+.xwexi_site #body {
+    font-size: 1.1rem;
+}
+
+.xwexi_site h1 {
+    font-size: 2rem; /* Theme Default: 3.25rem */
+}
+
+.xwexi_site h2 {
+    font-size: 1.5rem; /* Theme Default: 2.55rem */
+    border-bottom: solid 1px black;
+}
+
+.xwexi_site h3 {
+    font-size: 1.4rem; /* Theme Default: 2.15rem */
+    font-weight: bold;
+}
+
+.xwexi_site h4 {
+    font-size: 1.2rem; /* Theme Default: ?rem */
+}
+
+.xwexi_site h5 {
+    font-size: 1.1rem; /* Theme Default: ?rem */
+}
+
+
+.xwexi_site #body-inner table {
+    width: auto;
+}
+
+.xwexi_site #body-inner td, .xwexi_site #body-inner th {
+    border: solid 1px #aaa;
+}
