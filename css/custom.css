@@ -101,6 +101,10 @@ footer a:link, footer a:visited {
     text-align: center;
 }
 
+.globasa_links a {
+    white-space: nowrap;
+}
+
 
 
 /*****************/
