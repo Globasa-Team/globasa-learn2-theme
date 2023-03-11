@@ -95,6 +95,8 @@ footer a:link, footer a:visited {
     float: left;
     display: inline-block;
     margin: .51em;
+    max-width: 2em;
+    height: auto;
 }   
 
 .globasa_links {
