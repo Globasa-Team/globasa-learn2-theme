@@ -30,14 +30,14 @@ https://coolors.co/0040a9-c3f3c0-d00000-ffba08-008113
 
 .xwexi_site #sidebar {
     background-color: var(--shadowBlue);
-    background: url(https://api.globasa.net/logo/globasa-flag-square-1024.png)
+    background: url(https://cdn.globasa.net/graphics/flag/glb_flag-square_1024.png)
         no-repeat  25%, linear-gradient(to bottom, rgb(0, 0, 100), rgb(0, 0, 55));
     background-blend-mode: multiply ;
 }
 
 .doxo_site #sidebar {
     background-color: var(--shadowGreen);
-    background: url(https://api.globasa.net/logo/globasa-flag-square-1024.png)
+    background: url(https://cdn.globasa.net/graphics/flag/glb_flag-square_1024.png)
         no-repeat  25%, linear-gradient(to bottom, rgb(0, 55, 0), rgb(0, 25, 0));
     background-blend-mode:  multiply;
 }
