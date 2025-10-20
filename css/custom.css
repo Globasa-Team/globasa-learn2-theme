@@ -194,17 +194,17 @@ footer a:link, footer a:visited {
 
 .xwexi_site #body {
     max-width: 1024px;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
 
 
 .xwexi_site #sidebar {
     color: white;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
 
 .xwexi_site #body-inner, .xwexi_site h1, .xwexi_site h2, .xwexi_site h3, .xwexi_site h4, .xwexi_site h5 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     color: black;
     letter-spacing: normal;
 }
