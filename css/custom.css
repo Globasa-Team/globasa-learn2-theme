@@ -4,7 +4,7 @@
     --glbGreen: #008113;
     --shadowBlue: #000060; /* Recommended shadow */
     --shadowGreen: #006000;
-
+    --document_fonts: 'Open Sans', 'Segoe UI', 'Noto Sans', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     /*
 https://coolors.co/0040a9-008113-a9ddd6-91adc2-9ba0bc
 https://coolors.co/0040a9-fffdfd-cbd2d0-f0e100-008113
@@ -12,9 +12,16 @@ https://coolors.co/0040a9-c3f3c0-d00000-ffba08-008113
     */
 }
 
-#body {
+/*
+body {
     max-width: 1024px;
 }
+*/
+
+body, h1, h2, h3, h4, h5, h6, #chapter h3 {
+    font-family: var(--document_fonts);
+}
+
 
 #logo, #logo:link, #logo:hover, #logo:visited {
     font-size: xx-large;
@@ -93,7 +100,6 @@ footer a:link, footer a:visited {
 
 #body footer img.cc_license {
     float: left;
-    display: inline-block;
     margin: .51em;
     max-width: 2em;
     height: auto;
@@ -115,12 +121,10 @@ footer a:link, footer a:visited {
 
 .doxo_site #body {
     font-size: 1.3rem;
-    font-family: 'Proza Libre', sans-serif;
 }
 
 .doxo_site #sidebar {
     color: white;
-    font-family: 'Proza Libre', sans-serif;
 }
 
 .doxo_site #header {
@@ -129,7 +133,6 @@ footer a:link, footer a:visited {
 }
 
 .doxo_site #body-inner, .doxo_site h1, .doxo_site h2, .doxo_site h3, .doxo_site h4, .doxo_site h5 {
-    font-family: 'Proza Libre', sans-serif;
     color: black;
     letter-spacing: normal;
 }
@@ -194,17 +197,14 @@ footer a:link, footer a:visited {
 
 .xwexi_site #body {
     max-width: 1024px;
-    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
 
 
 .xwexi_site #sidebar {
     color: white;
-    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
 
 .xwexi_site #body-inner, .xwexi_site h1, .xwexi_site h2, .xwexi_site h3, .xwexi_site h4, .xwexi_site h5 {
-    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     color: black;
     letter-spacing: normal;
 }
