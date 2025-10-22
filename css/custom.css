@@ -12,7 +12,7 @@ https://coolors.co/0040a9-c3f3c0-d00000-ffba08-008113
     */
 }
 
-body, h1, h2, h3, h4, h5, h6, #chapter h3 {
+body, #body, h1, h2, h3, h4, h5, h6, #chapter h3 {
     font-family: var(--document_fonts);
 }
 
@@ -23,6 +23,7 @@ body, h1, h2, h3, h4, h5, h6, #chapter h3 {
 
 #body {
     font-size: 1.3rem;
+    max-width: 1024px;
 }
 
 #body-inner, h1, h2, h3, h4, h5, blockquote, blockquote p {
@@ -50,6 +51,7 @@ body em {
 /** Sidebar **/
 #sidebar {
     color: white;
+    z-index: 1;
 }
 
 .xwexi_site #sidebar {
@@ -75,22 +77,21 @@ body em {
     background-color: rgba(0, 0, 0, .5);
 }
 
+
+/** Sidebar Header **/
 #header {
     padding: 0px;
     color: white;
 }
 
-/** Sidebar Header **/
 .xwexi_site #header{
     background-color: var(--glbBlue);
-
     background: linear-gradient(0deg, rgba(47,103,195,1) 0%, rgba(0,64,169,1) 55%); 
-    
 }
 
-.default #header {
-    /* Do nothing for now */
-    background-color: inherit;
+.doxo_site #header {
+    background-color: var(--glbGreen);
+    background: linear-gradient(0deg, rgba(44,171,63,1) 0%, rgba(0,129,19,1) 83%); 
 }
 
 footer {
@@ -127,60 +128,15 @@ footer a:link, footer a:visited {
     white-space: nowrap;
 }
 
-
-
-
-
-
-
-
-/*****************/
-/** doxo style **/
-/*****************/
-
-
-.doxo_site #header {
-    background-color: var(--glbGreen);
-    background: linear-gradient(0deg, rgba(44,171,63,1) 0%, rgba(0,129,19,1) 83%); 
-}
-
-
-
-.doxo_site .imgFocus {
+.imgFocus {
     max-height: 100%;
     max-width: 50%;
 }
 
-.doxo_site .legal {
-    font-size: small;
-    color: #888;
-    border-top: solid 1px #888;
-}
-
-
-@media (max-width:840px) {
-    .doxo_site .imgFocus {
-     max-width: 100%;
-     max-height: 100%;
- }
-}
-@media (max-width:600px) {
-    .doxo_site .imgFocus {
-      max-height: 100%;
-      max-width: 100%;
-  }
-}
-
-
-/*****************/
-/** xwexi style **/
-/*****************/
-
-.xwexi_site #body {
-    max-width: 1024px;
-}
-
-.xwexi_site #body-inner table {
+#body-inner table {
+    font-size: .5em;
+    line-height: 110%;
+    max-width: 100%;
+    overflow-x: scroll;
     width: auto;
 }
-
