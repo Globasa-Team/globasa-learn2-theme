@@ -2,7 +2,8 @@
     /* Globasa flag colours */
     --glbBlue: #0040a9;
     --glbGreen: #008113;
-    --shadowBlue: #000060; /* Recommended shadow */
+    --shadowBlue: #000060;
+    /* Recommended shadow */
     --shadowGreen: #006000;
     --document_fonts: 'Open Sans', 'Segoe UI', 'Noto Sans', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     /*
@@ -12,34 +13,66 @@ https://coolors.co/0040a9-c3f3c0-d00000-ffba08-008113
     */
 }
 
-body, #body, h1, h2, h3, h4, h5, h6, #chapter h3 {
+body,
+#body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#chapter h3 {
     font-family: var(--document_fonts);
 }
 
-#logo, #logo:link, #logo:hover, #logo:visited {
+#logo,
+#logo:link,
+#logo:hover,
+#logo:visited {
     font-size: xx-large;
     color: white;
 }
 
 #body {
-    font-size: 1.3rem;
     max-width: 1024px;
 }
 
-#body-inner, h1, h2, h3, h4, h5, blockquote, blockquote p {
+#body-inner,
+h1,
+h2,
+h3,
+h4,
+h5,
+blockquote,
+blockquote p {
     color: black;
     letter-spacing: normal;
 }
 
-h1 {font-size: 2rem;}
-h2 {font-size: 1.8rem;
-    border-bottom: solid 1px black;}
-h3 {font-size: 1.5rem;
-    font-weight: 700;}
-h4 {font-size: 1.2rem;}
-h5 {font-size: 1.1rem;}
+h1 {
+    font-size: 2rem;
+}
 
-#body-inner td, #body-inner th {
+h2 {
+    font-size: 1.8rem;
+    border-bottom: solid 1px black;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+#body-inner td,
+#body-inner th {
     border: solid 1px #aaa;
 }
 
@@ -56,24 +89,24 @@ body em {
 
 .xwexi_site #sidebar {
     background-color: var(--shadowBlue);
-    background: url(https://cdn.globasa.net/graphics/flag/glb_flag-square_1024.png)
-        no-repeat  25%, linear-gradient(to bottom, rgb(0, 0, 100), rgb(0, 0, 55));
-    background-blend-mode: multiply ;
+    background: url(https://cdn.globasa.net/graphics/flag/glb_flag-square_1024.png) no-repeat 25%, linear-gradient(to bottom, rgb(0, 0, 100), rgb(0, 0, 55));
+    background-blend-mode: multiply;
 }
 
 .doxo_site #sidebar {
     background-color: var(--shadowGreen);
-    background: url(https://cdn.globasa.net/graphics/flag/glb_flag-square_1024.png)
-        no-repeat  25%, linear-gradient(to bottom, rgb(0, 55, 0), rgb(0, 25, 0));
-    background-blend-mode:  multiply;
+    background: url(https://cdn.globasa.net/graphics/flag/glb_flag-square_1024.png) no-repeat 25%, linear-gradient(to bottom, rgb(0, 55, 0), rgb(0, 25, 0));
+    background-blend-mode: multiply;
 }
 
 /* Remove colours */
-#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+#sidebar ul.topics>li.parent,
+#sidebar ul.topics>li.active {
     background: none;
 }
 
-.active1 > ul, #sidebar ul.topics > li.parent > ul {
+.active1>ul,
+#sidebar ul.topics>li.parent>ul {
     background-color: rgba(0, 0, 0, .5);
 }
 
@@ -84,32 +117,34 @@ body em {
     color: white;
 }
 
-.xwexi_site #header{
+.xwexi_site #header {
     background-color: var(--glbBlue);
-    background: linear-gradient(0deg, rgba(47,103,195,1) 0%, rgba(0,64,169,1) 55%); 
+    background: linear-gradient(0deg, rgba(47, 103, 195, 1) 0%, rgba(0, 64, 169, 1) 55%);
 }
 
 .doxo_site #header {
     background-color: var(--glbGreen);
-    background: linear-gradient(0deg, rgba(44,171,63,1) 0%, rgba(0,129,19,1) 83%); 
+    background: linear-gradient(0deg, rgba(44, 171, 63, 1) 0%, rgba(0, 129, 19, 1) 83%);
 }
 
 footer {
     border-top: solid 2px var(--glbGreen);
     border-bottom: solid 2px var(--glbBlue);
-    background: rgb(0,64,169);
-    background: linear-gradient(3deg, rgba(0,64,169,1) 0%, rgba(153,192,255,1) 10%, rgba(133,255,151,1) 90%, rgba(0,129,19,1) 100%);     
+    background: rgb(0, 64, 169);
+    background: linear-gradient(3deg, rgba(0, 64, 169, 1) 0%, rgba(153, 192, 255, 1) 10%, rgba(133, 255, 151, 1) 90%, rgba(0, 129, 19, 1) 100%);
     color: black;
     font-size: smaller;
     padding: 1em;
 }
 
-footer a:link, footer a:visited {
+footer a:link,
+footer a:visited {
     color: #333;
     text-decoration: underline;
 }
 
-.cc_license, #body footer img.cc_license {
+.cc_license,
+#body footer img.cc_license {
     vertical-align: middle;
 }
 
@@ -118,7 +153,7 @@ footer a:link, footer a:visited {
     margin: .51em;
     max-width: 2em;
     height: auto;
-}   
+}
 
 .globasa_links {
     text-align: center;
@@ -134,9 +169,35 @@ footer a:link, footer a:visited {
 }
 
 #body-inner table {
-    font-size: .5em;
     line-height: 110%;
     max-width: 100%;
     overflow-x: scroll;
     width: auto;
+}
+
+
+/* Small/narrow screens */
+@media (max-width: 767px) {
+    #body {
+        font-size: 1.3rem;
+    }
+
+    #body-inner table {
+        font-size: 1.2rem;
+    }
+
+    #body-inner table.small_table {
+        font-size: 1.0rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 768px) {
+    #body {
+        font-size: 1.1rem;
+    }
+
+    #body-inner table.small_table {
+        font-size: 0.8rem;
+    }
 }
