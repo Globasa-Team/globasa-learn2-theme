@@ -1,3 +1,18 @@
+@font-face { font-family: 'Nebula Sans'; font-weight: 100; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Light.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 200; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Light.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 300; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Book.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 400; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Medium.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 600; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Semibold.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 700; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Bold.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 800; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Black.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 100; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-LightItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 200; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-LightItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 300; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-BookItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 400; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-MediumItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 600; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-SemiboldItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 700; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-BoldItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 800; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-BlackItalic.woff2') format('woff2'); }
+
 :root {
     /* Globasa flag colours */
     --glbBlue: #0040a9;
@@ -5,7 +20,10 @@
     --shadowBlue: #000060;
     /* Recommended shadow */
     --shadowGreen: #006000;
-    --document_fonts: 'Open Sans', 'Segoe UI', 'Noto Sans', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --document_fonts: "Nebula Sans",  "Open Sans", Roboto, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  
+    --regular_font_features: 'ss01' 0, 'ss02' 0, 'ss03' 1;
+    --italic_font_features: 'ss01' 1, 'ss02' 1, 'ss03' 0;
     /*
 https://coolors.co/0040a9-008113-a9ddd6-91adc2-9ba0bc
 https://coolors.co/0040a9-fffdfd-cbd2d0-f0e100-008113
@@ -13,22 +31,18 @@ https://coolors.co/0040a9-c3f3c0-d00000-ffba08-008113
     */
 }
 
-body,
-#body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-#chapter h3 {
+body, #body, h1, h2, h3, h4, h5, h6, #chapter h3 {
     font-family: var(--document_fonts);
+    font-feature-settings: var(--regular_font_features);
+    letter-spacing: -0.03em;
+
 }
 
-#logo,
-#logo:link,
-#logo:hover,
-#logo:visited {
+em, i {
+    font-feature-settings: var(--italic_font_features);
+}
+
+#logo, #logo:link, #logo:hover, #logo:visited {
     font-size: xx-large;
     color: white;
 }
@@ -37,16 +51,8 @@ h6,
     max-width: 1024px;
 }
 
-#body-inner,
-h1,
-h2,
-h3,
-h4,
-h5,
-blockquote,
-blockquote p {
+#body-inner, h1, h2, h3, h4, h5, blockquote, blockquote p {
     color: black;
-    letter-spacing: normal;
 }
 
 h1 {
@@ -71,14 +77,8 @@ h5 {
     font-size: 1.1rem;
 }
 
-#body-inner td,
-#body-inner th {
+#body-inner td, #body-inner th {
     border: solid 1px #aaa;
-}
-
-body em {
-    font-weight: 400;
-    font-family: "Roboto", var(--document_fonts);
 }
 
 /** Sidebar **/
@@ -100,13 +100,11 @@ body em {
 }
 
 /* Remove colours */
-#sidebar ul.topics>li.parent,
-#sidebar ul.topics>li.active {
+#sidebar ul.topics>li.parent, #sidebar ul.topics>li.active {
     background: none;
 }
 
-.active1>ul,
-#sidebar ul.topics>li.parent>ul {
+.active1>ul, #sidebar ul.topics>li.parent>ul {
     background-color: rgba(0, 0, 0, .5);
 }
 
@@ -137,14 +135,12 @@ footer {
     padding: 1em;
 }
 
-footer a:link,
-footer a:visited {
+footer a:link, footer a:visited {
     color: #333;
     text-decoration: underline;
 }
 
-.cc_license,
-#body footer img.cc_license {
+.cc_license, #body footer img.cc_license {
     vertical-align: middle;
 }
 
