@@ -1,17 +1,17 @@
-@font-face { font-family: 'Nebula Sans'; font-weight: 100; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Light.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 200; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Light.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 300; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Book.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 400; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Medium.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 600; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Semibold.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 700; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Bold.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 800; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-Black.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 100; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-LightItalic.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 200; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-LightItalic.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 300; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-BookItalic.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 400; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-MediumItalic.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 600; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-SemiboldItalic.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 700; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-BoldItalic.woff2') format('woff2'); }
-@font-face { font-family: 'Nebula Sans'; font-weight: 800; font-style: italic; src: url('https://www.globasa.net/user/themes/globasa-quark-theme/css/WOFF2/NebulaSans-BlackItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 100; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-Light.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 200; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-Light.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 300; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-Book.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 400; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-Medium.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 600; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-Semibold.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 700; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-Bold.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 800; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-Black.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 100; font-style: italic; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-LightItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 200; font-style: italic; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-LightItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 300; font-style: italic; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-BookItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 400; font-style: italic; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-MediumItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 600; font-style: italic; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-SemiboldItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 700; font-style: italic; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-BoldItalic.woff2') format('woff2'); }
+@font-face { font-family: 'Nebula Sans'; font-weight: 800; font-style: italic; src: url('/user/themes/globasa-learn2-theme/css/WOFF2/NebulaSans-BlackItalic.woff2') format('woff2'); }
 
 :root {
     /* Globasa flag colours */
