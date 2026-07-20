@@ -15,16 +15,14 @@
   <a href="https://www.globasa.net/{{ html_lang }}/kontato">⚠️ {{ 'REPORT_ERROR'|t }}</a>
 </p>
 
-  
-
-<section class="copyright">  
+<section class="copyright">
   <a xmlns:dct="http://purl.org/dc/terms/" rel="license" class="cc_license badge"
      href="http://creativecommons.org/publicdomain/zero/1.0/">
     <img src="{{ url('theme://images/cc_blue_x2.png') }}" alt="CC0" class="cc_license"/>
     <img src="{{ url('theme://images/zero_blue_x2.png') }}" alt="CC0" class="cc_license"/>
   </a>
   <p xmlns:dct="http://purl.org/dc/terms/" class="cc_license">
-    {{ 'COPYRIGHT_NOTICE'|t }} {{ 'HOST_NOTICE'|t }}
+    {{ 'COPYRIGHT_NOTICE'|t|raw }} {{ 'HOST_NOTICE'|t|raw }}
   </p>
 </section>
 

@@ -1,7 +1,7 @@
 name: Globasa Learn2 theme
 slug: globasa-learn2-theme
 type: theme
-version: 2
+version: 3
 description: Globasa theme based on Learn2
 icon: language
 author:
@@ -15,7 +15,7 @@ readme: https://github.com/ShawnPConroy/globasa-learn2-theme/blob/develop/README
 license: MIT
 
 dependencies:
-  - { name: grav, version: '>=1.6.0' }
+  - { name: grav, version: '>=2.0.0' }
 
 
 form:
